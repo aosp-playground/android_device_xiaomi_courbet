@@ -1,2 +1,5 @@
+on early-init
+    setprop ro.boot.hardware.sku ${ro.boot.hwc}
+
 on property:ro.boot.hwversion=*
     setprop ro.boot.hardware.revision ${ro.boot.hwversion}
